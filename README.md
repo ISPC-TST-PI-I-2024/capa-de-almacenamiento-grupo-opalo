@@ -9,12 +9,15 @@
 - **Institución**: Instituto Superior Politécnico Córdoba (ISPC)
 - **Curso**: Proyecto Integrador I
 - **Docente**: Cristian Gonzalo Vera
-- **Equipo de Desarrollo [nombre del quipo]**:
-  - Integrante 1
-  - Integrante 2
-  - Integrante 3
-  - Integrante 4
-  - (Añadir más integrantes según corresponda)
+- **Equipo de Desarrollo Opalo**:
+  - Luciano Lujan | GitHub: https://github.com/lucianoilujan
+  - Joaquin Garzón | GitHub: https://github.com/Joacogarzonn
+  - Durigutti, Vittorio | GitHub: https://github.com/vittoriodurigutti
+  - Joaquin Zalazar | GitHub: https://github.com/breaakerr
+  - Lisandro Juncos | GitHub: https://github.com/Lisandro-05
+  - Nahuel Velez | GitHub: https://github.com/ISPC-TST-PI-I-2024/ISPC_PI_Lucas_Nahuel_Velez 
+  - Jose Marquez | GitHub: https://github.com/ISPC-TST-PI-I-2024/josemarquez.git
+  - Tomas Repossi | GitHub:  https://github.com/TomasRepossi
 
 ## Sobre el Proyecto
 
