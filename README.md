@@ -78,4 +78,4 @@ Para obtener más información sobre esta licencia y ver una copia completa de s
 - **GitHub del Equipo Scrum**: [Link al GitHub](https://github.com/equipo_scrum)
 - **Correo de Contacto**: [correo@example.com](mailto:correo@example.com)
 
-  ## 8/5/2024 - Se crea Kanban.-
+## 8/5/2024 - Se crea Kanban.-
