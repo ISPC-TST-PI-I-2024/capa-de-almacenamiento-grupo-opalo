@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Dispositivos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Dispositivos</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Modelo</th>
+                <th>Fecha de Fabricación</th>
+                <th>Fecha de Colocación</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for dispositivo in dispositivos %}
+            <tr>
+                <td>{{ dispositivo.dispositivo_id }}</td>
+                <td>{{ dispositivo.modelo }}</td>
+                <td>{{ dispositivo.fecha_fabricacion }}</td>
+                <td>{{ dispositivo.fecha_colocacion }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

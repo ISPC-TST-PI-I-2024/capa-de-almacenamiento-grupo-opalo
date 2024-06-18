@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+</head>
+<body>
+    <h1>Página Principal</h1>
+    <ul>
+        <li><a href="{{ url_for('listar_pacientes') }}">Lista de Pacientes</a></li>
+        <li><a href="{{ url_for('listar_historiales') }}">Lista de Historiales Médicos</a></li>
+        <li><a href="{{ url_for('listar_dispositivos') }}">Lista de Dispositivos</a></li>
+        <li><a href="{{ url_for('listar_mediciones') }}">Lista de Mediciones</a></li>
+    </ul>
+</body>
+</html>
