@@ -7,14 +7,27 @@
 </head>
 <body>
     <h1>Historiales Médicos</h1>
-    <ul>
-        {% for historial in historiales %}
-            <li>
-                <strong>Diagnóstico:</strong> {{ historial.diagnostico }}<br>
-                <strong>Tratamiento:</strong> {{ historial.tratamiento }}<br>
-                <strong>Notas:</strong> {{ historial.notas }}
-            </li>
-        {% endfor %}
-    </ul>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Diagnóstico</th>
+                <th>Tratamiento</th>
+                <th>Notas</th>
+                <th>Paciente ID</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for historial in historiales %}
+            <tr>
+                <td>{{ historial.historial_id }}</td>
+                <td>{{ historial.diagnostico }}</td>
+                <td>{{ historial.tratamiento }}</td>
+                <td>{{ historial.notas }}</td>
+                <td>{{ historial.paciente_id }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 </body>
 </html>
