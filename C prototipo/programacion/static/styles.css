@@ -1,20 +1,23 @@
-/* Estilos generales */
+/* 
+Estilos de css que dan un apartado grafico a las paginas web desplegadas con HTML.
+Usamos un diseño generico aplicable a cada elemento compartido en los templates. 
+*/
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     padding: 20px;
-    text-align: center; /* Centrar el contenido del body */
+    text-align: center; 
 }
 
 h1 {
     color: #333;
 }
 
-/* Estilo para la lista en el index.html */
 ul {
     list-style: none;
     padding: 0;
-    margin-top: 20px; /* Espacio encima de la lista */
+    margin-top: 20px; 
 }
 
 ul li {
@@ -28,25 +31,24 @@ ul li:hover {
     background-color: #f0f0f0;
 }
 
-/* Estilo para los enlaces dentro de la lista del index.html */
+
 ul li a {
     text-decoration: none;
-    color: #333; /* Color del texto de los enlaces */
-    display: block; /* Convertir los enlaces en bloques para ocupar todo el espacio del li */
-    padding: 10px; /* Añadir relleno para el clic en toda el área del enlace */
+    color: #333; 
+    display: block; 
+    padding: 10px;
 }
 
 ul li a:hover {
-    color: #007bff; /* Cambia el color al pasar el cursor sobre los enlaces */
+    color: #007bff;
 }
 
-/* Estilo para las tablas */
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
-    background-color: #fff; /* Fondo blanco para las tablas */
-    border: 1px solid #ccc; /* Borde delgado */
+    background-color: #fff; 
+    border: 1px solid #ccc; 
 }
 
 th, td {

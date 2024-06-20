@@ -1,14 +1,28 @@
 from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
 
+
+'''
+En este archivo configuramos los principales elementos para levantar el proyecto como una pagina web. 
+Definimos y creamos la instancia flask, depues definimos el modelo correspondiente a cada entidad de la base de datos
+Se crean las rutas para la aplicacion flask, que llevan a la carpeta /templates/ **.html 
+Y por ultimo se utiliza la convneicion comun de python __main__ seguido por el app.run que da inico al servidor web
+'''
+
+# La instancia de flask, que nos permite luego desplegarlo como pagina web
+# esta linea da inicio a la instancia
 app = Flask(__name__)
 
-# Configuración de la conexión a la base de datos
+# aca definimos la conexion con la base de datos, brindando usuario, contraseña,direccion ip, puerto y nombre de la base de datos
 db_uri = "mysql://root:Contrasena09081994@127.0.0.1:3306/proyecto_ip"
+#la primera linea configura la uri y permite conectarse con la BD 
 app.config['SQLALCHEMY_DATABASE_URI'] = db_uri
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False  # Desactiva el seguimiento de modificaciones
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False  
 
+# Aca se crea el objeto SQLAlchemy, que se conecta usando la configuración anterior.
 db = SQLAlchemy(app)
+
+###########################################################
 
 # Define el modelo para la tabla Paciente
 class Paciente(db.Model):
@@ -67,6 +81,8 @@ class Medicion(db.Model):
     dispositivo_id = db.Column(db.Integer, db.ForeignKey('Dispositivo.dispositivo_id'))
     dispositivo = db.relationship('Dispositivo', backref='mediciones')
 
+###########################################################
+
 # Rutas para la aplicación Flask
 @app.route('/')
 def index():
@@ -96,6 +112,8 @@ def listar_mediciones():
 def listar_contactos():
     contactos = ContactoEmergencia.query.all()
     return render_template('lista_contactos.html', contactos=contactos)
+
+###########################################################
 
 if __name__ == '__main__':
     app.run(debug=True)
