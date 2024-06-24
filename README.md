@@ -23,11 +23,21 @@
 
 Este repositorio está dedicado a la Capa de Almacenamiento del proyecto IoT. Incluye todos los componentes desarrollados y documentación generada por los estudiantes conforme avanzan en la implementación de esta capa del proyecto.
 
+Nos encontramos en el desarrollo de un dispositivo IoT con el que medir en tiempo real los valores de glucemia de un paciente. Dentro del directorio programacion nos encontramos una estructura con python y con el uso de flask, ejecutamos el programa en una direccion online, dandonos acceso a la base de datos, de momento siendo una estrcutura estatica, pero proximamente, sera actualizad a tiempo real, con un dispositivo prototipo. 
+
+
 ### Estructura del Repositorio
 
 - **A requisitos**: Contiene documentos de requisitos proporcionados por el docente.
 - **B investigacion**: Investigaciones realizadas por los estudiantes.
 - **C prototipo**: Implementaciones específicas de la capa de almacenamiento.
+  - **Componentes Principales**
+        - app.py: El archivo principal de la aplicación Flask, que define las rutas y la lógica del servidor web.
+        - static/ y templates/: Directorios utilizados por Flask para servir archivos estáticos y plantillas HTML.
+        - Dockerfile: Archivo utilizado para construir una imagen de Docker que contiene la aplicación Flask.
+        - docker-compose.yml: Archivo de configuración para Docker Compose, que facilita la configuración y ejecución de servicios de Docker.
+        - requirements.txt: Archivo que lista las dependencias de Python necesarias para ejecutar la aplicación Flask.
+        - Proyecto PI.sql: Archivo que contiene las instrucciones SQL para la configuración de la base de datos.
 - **D presentacion**: Incluye grabaciones y bitácoras de las reuniones de Scrum, así como las presentaciones de progreso.
 - **zassets**: Contiene recursos gráficos como imágenes y otros archivos necesarios para la documentación.
 
@@ -43,27 +53,10 @@ Este repositorio está dedicado a la Capa de Almacenamiento del proyecto IoT. In
 - IDE: **Visual Studio Code**
 - Bases de Datos: **MySQL** (SQL), **MongoDB** (NoSQL)
 - Contenedorización: **Docker y Kubernetes**
-- Lenguajes de Programación: **Python y JavaScript**
+- Lenguajes de Programación: **Python y JavaScript (HTML y CSS)**
 - Herramientas Adicionales: **Postman** para pruebas de API
 
-## Sprint 5: Elección entre SQL y NoSQL
-
-### Objetivos
-
-Comprender y aplicar las diferencias entre bases de datos SQL y NoSQL, seleccionando la más adecuada para las necesidades del proyecto.
-
-### Historia de Usuario
-
-"Como estudiante de IoT, quiero entender las diferencias entre SQL y NoSQL para poder elegir la mejor base de datos para mi proyecto específico de IoT."
-
-### Product Backlog
-
-1. Investigar las diferencias clave entre SQL y NoSQL.
-2. Analizar ventajas de SQL para transacciones y relaciones complejas.
-3. Evaluar ventajas de NoSQL para escalabilidad y flexibilidad.
-4. Discutir en grupo las necesidades específicas del proyecto IoT.
-5. Elegir y justificar la base de datos adecuada para el proyecto.
-6. Documentar la elección y justificación en GitHub.
+-------------------------------------------
 
 ## Licencia
 
@@ -71,11 +64,4 @@ Este proyecto está licenciado bajo la Licencia Creative Commons Atribución-NoC
 
 Esta licencia es adecuada para un uso educativo y de aprendizaje, permitiendo la libre distribución y utilización del material mientras se protege contra el uso comercial sin autorización previa. Para usos comerciales, es necesario contactar a los autores para obtener permiso. 
 
-Para obtener más información sobre esta licencia y ver una copia completa de sus términos, visite [Creative Commons Atribución-NoComercial (CC BY-NC)](https://creativecommons.org/licenses/by-nc/4.0/).
-
-## Contacto y Más Información
-
-- **GitHub del Equipo Scrum**: [Link al GitHub](https://github.com/equipo_scrum)
-- **Correo de Contacto**: [correo@example.com](mailto:correo@example.com)
-
-  ## 8/5/2024 - Se crea Kanban.-
+Para obtener más información sobre esta licencia y ver una copia completa de sus términos, visite [Creative Commons Atribución-NoComercial (CC BY-NC)](https://creativecommons.org/licenses/by-nc/4.0/)..-
