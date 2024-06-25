@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Mediciones</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Mediciones</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Fecha</th>
+                <th>Glucemia</th>
+                <th>Fabricante</th>
+                <th>Dispositivo ID</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for medicion in mediciones %}
+            <tr>
+                <td>{{ medicion.medicion_id }}</td>
+                <td>{{ medicion.fecha }}</td>
+                <td>{{ medicion.glucemia }}</td>
+                <td>{{ medicion.fabricante }}</td>
+                <td>{{ medicion.dispositivo_id }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

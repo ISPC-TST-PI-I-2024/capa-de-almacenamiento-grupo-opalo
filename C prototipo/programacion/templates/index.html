@@ -1,0 +1,27 @@
+<!-- 
+ 
+Este es un archivo HTML regular, que funciona como index o pagina principal,
+y que es luego llamado por flask para ser ejecutado como pagina web
+
+En el cuerpo, definimos un titulo <h1>, y luego una lista con los links,
+que dirigen a cada uno de los otros templates
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Página Principal</h1>
+    <ul>
+        <li><a href="{{ url_for('listar_pacientes') }}">Lista de Pacientes</a></li>
+        <li><a href="{{ url_for('listar_historiales') }}">Lista de Historiales Médicos</a></li>
+        <li><a href="{{ url_for('listar_dispositivos') }}">Lista de Dispositivos</a></li>
+        <li><a href="{{ url_for('listar_mediciones') }}">Lista de Mediciones</a></li>
+        <li><a href="{{ url_for('listar_contactos') }}">Lista de Contactos de Emergencia</a></li>
+    </ul>
+</body>
+</html>
